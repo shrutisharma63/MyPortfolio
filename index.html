@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Professional Glassmorphism Navigation (Icons Removed From Right Side) -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-bracket">&lt;</span>Shruti<span class="highlight"> </span>Sharma<span class="logo-bracket">/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#timeline">Journey</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="badge">Available for Roles</div>
+            <h3>Hi, Welcome to my space...</h3>
+            <h1>I am a <span id="typing-text" class="highlight"></span><span class="cursor">|</span></h1>
+            <p class="hero-subtext">Passionate about designing and constructing high-performance user interfaces with modern frontend ecosystems.</p>
+            <div class="social-wrapper">
+                <a href="https://github.com/shrutisharma63" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shruti-sharma-497412262/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="code-content">
+                    <p><span class="keyword">const</span> developer = {</p>
+                    <p class="indent"><span class="property">name</span>: <span class="string">'Your Name'</span>,</p>
+                    <p class="indent"><span class="property">type</span>: <span class="string">'Frontend Engineer'</span>,</p>
+                    <p class="indent"><span class="property">skills</span>: [<span class="string">'React'</span>, <span class="string">'Angular'</span>, <span class="string">'Tailwind'</span>],</p>
+                    <p class="indent"><span class="property">location</span>: <span class="string">'Jaipur, IN'</span></p>
+                    <p>};</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2>About <span class="highlight">Me</span></h2>
+        </div>
+        <div class="about-container">
+            <div class="about-text-wrapper">
+                <p class="about-paragraph">
+                   Hello! I'm a passionate Frontend Developer with 1 year of professional experience building responsive, user-centric web applications. I specialize in crafting clean, high-performance user interfaces using modern frontend technologies like React, Angular, and Tailwind CSS.
+                </p>
+                <p class="about-paragraph">
+                    Driven by the evolving tech landscape, my current focus is on bridging the gap between web development and intelligent systems
+                </p>
+                <p class="about-paragraph">
+                    I am actively expanding my expertise by integrating AI technologies and smart APIs into the frontend to deliver more dynamic, automated, and personalized user experiences.
+                </p>
+            </div>
+            <div class="skills-mini-grid">
+                <div class="skill-tag">React.js</div>
+                <div class="skill-tag">Angular</div>
+                <div class="skill-tag">Tailwind CSS</div>
+                <div class="skill-tag">JavaScript ES6</div>
+                <div class="skill-tag">Node.js</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="section-header">
+            <h2>Education & <span class="highlight">Experience</span></h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h3>Software Developer</h3>
+                    <p>Build scalable user centric web application.Driven by the evolving tech landscape, my current focus is on bridging the gap between web development and intelligent systems.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Poornima University</div>
+                <div class="timeline-content">
+                    <h3>Bachelor's Of Computer Application</h3>
+                    <p>Gained a strong foundation in core computer science principles, software engineering concepts, and programming frameworks that launched my career into modern web development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2>Recent <span class="highlight">Projects</span></h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-card-header">
+                    <i class="fa-regular fa-folder-open folder-icon"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/shrutisharma63/WeatherApp_Project" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://weather-app-project-psi.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">Weather Application</h3>
+                <p class="project-desc">A real-time weather tracking application that fetches live global climate data. It features interactive UI state switches, seamless asynchronous API handling, and localized dynamic backgrounds that shift visually based on current regional climates and time zones.</p>
+                <div class="project-tech">
+                    <span>Angular</span>
+                    <span>TypeScript</span>
+                    <span>REST API</span>
+                    <span>HTML&CSS</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-header">
+                    <i class="fa-regular fa-folder-open folder-icon"></i>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">Style Cart Website</h3>
+                <p class="project-desc">A highly interactive e-commerce web platform engineered for a seamless shopping experience. It features dynamic state-driven shopping cart management, responsive product catalog grids, interactive filtering capabilities, and optimized layout fluidities across modern devices.</p>
+                <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>CSS3 Grid</span>
+                    <span>React-JS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Contact <span class="highlight">Me</span></h2>
+        </div>
+        <div class="contact-container">
+            <p class="contact-text">Feel free to contact me! I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            <div class="contact-cards-wrapper">
+                <a href="https://www.linkedin.com/in/shruti-sharma-497412262/" target="_blank" class="contact-card-link">
+                    <div class="contact-mini-card">
+                        <i class="fab fa-linkedin-in contact-card-icon"></i>
+                        <span>LinkedIn Profile</span>
+                    </div>
+                </a>
+                <a href="https://github.com/shrutisharma63" target="_blank" class="contact-card-link">
+                    <div class="contact-mini-card">
+                        <i class="fab fa-github contact-card-icon"></i>
+                        <span>GitHub Profile</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Built with precision. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
